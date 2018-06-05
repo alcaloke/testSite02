@@ -1,3 +1,32 @@
 html {
   font-family: 'Open Sans', sans-serif;
 }
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  font-family: 'Arvo', serif;;
+  background-color: aliceblue;
+  color: plum;
+  font-size: 16pt;
+  margin: 3%;
+  padding: 3%;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  margin: 5%;
+  padding: 5%;
+  /* margin-bottom: 20px; */
+  border: 5px solid azure;
+  width: 80%;
+}
+
+footer {
+  margin: 5%;
+  padding: 0 5%;
+  border: 2px dashed plum;
+}

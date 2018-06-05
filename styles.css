@@ -3,30 +3,60 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 header {
   font-family: 'Arvo', serif;;
   background-color: aliceblue;
   color: plum;
-  font-size: 16pt;
+  font-size: 17pt;
+  text-shadow: 4px 4px 4px indigo;
   margin: 3%;
-  padding: 3%;
+  padding: 0.5% 3%;
   text-align: center;
+  border: 4px solid rgba(255, 0, 255, 0.2);
 }
 
 main {
+  /* font-family: 'Ubuntu', sans-serif; */
   background-color: white;
   margin: 5%;
-  padding: 5%;
+  padding: 0.5% 5%;
   /* margin-bottom: 20px; */
   border: 5px solid azure;
-  width: 80%;
+  /* width: 80%; */
+}
+
+.autoscroll {
+  width: auto;
+  height: 5em;
+  padding: 1em 1em 1em 1em;
+  border: 2px solid plum;
+  overflow: auto;
+}
+
+#backgroundClip {
+  width: 260px;
+  height: 260px;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px auto;
+
+  background-size: 300%;
+  background-position: center;
+  background-image: url("images/clip1.jpg");
+  background-color: gold;
+  background-repeat: no-repeat;
+
+  background-clip: border-box;
+  /* background-clip: content-box;
+  background-clip: padding-box; */
 }
 
 footer {
+
   margin: 5%;
   padding: 0 5%;
-  border: 2px dashed plum;
+  border: 1px dashed plum;
 }

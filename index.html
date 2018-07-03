@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Arvo" rel="stylesheet">
+  <script async src=script.js></script>
 </head>
 
 <body>
@@ -17,35 +18,38 @@
     <ul class="menu">
       <div class="home"><a href="#">Home</a></div>
       <div class="about"><a href="#">About</a></div>
-      <div class ="products"><a href="#">Products</a></div>
+      <div class="products"><a href="#">Products</a></div>
       <div class="contact"><a href="#">Contact</a></div>
     </ul>
   </nav>
 
+
+
   <main>
+    <button>Test Button A</button>
+    <button>Test Button B</button>
     <section>
       <article>
         <h2>Fearless state of mind</h2>
-        <p>Only with a fearless mind can we interact with reality with total freedom. How? Since we are able to see everything in their innate purity. This is only possible once the ego has been tamed; where we are no longer clouded by all the confusions that the conceptual mind creates.</p>
+        <p>Only with a fearless mind can we interact with reality with total freedom. How? Since we are able to see everything in their innate purity. This is only possible once the ego has been tamed; where we are no longer clouded by all the confusions
+          that the conceptual mind creates.</p>
       </article>
       <article>
         <h2>Loving presence</h2>
-        <p>True compassion is not an act but a way of being; a loving & authentic presence, which arises from true understanding & practice of equanimity. All human beings are accepted for who they are; no different to oneself; carrying seeds of enlightment. If one is awake, it must be one's duty to help the other human beings to also see the light.</p>
+        <p>True compassion is not an act but a way of being; a loving & authentic presence, which arises from true understanding & practice of equanimity. All human beings are accepted for who they are; no different to oneself; carrying seeds of enlightment.
+          If one is awake, it must be one's duty to help the other human beings to also see the light.</p>
       </article>
       <article>
         <h2>Humility & simplicity</h2>
-        <p>Humility is the foundation for conditioning ourselves so that everything within our lives can become simple. Only out of simplicity; it is possible to discover the authentic self. With a complicated mind, there is no space for reconfiguration. One cannot learn to unlearn.</p>
+        <p>Humility is the foundation for conditioning ourselves so that everything within our lives can become simple. Only out of simplicity; it is possible to discover the authentic self. With a complicated mind, there is no space for reconfiguration.
+          One cannot learn to unlearn.</p>
       </article>
     </section>
 
     <h2>Welcome to your new sensory experience</h2>
     <div id="backgroundClip"></div>
-    <p class="autoscroll">Reality is composed of light; more specifically, luminosity.
-      Sound Mirror's Color Organ is a technological tool that allows
-      the user to enhance their ability to see such luminosity.
-      How? By synchronising the light with sound; where the user is
-      able to see that light is no different to other sensory information.
-      All is a play of luminosity.
+    <p class="autoscroll">Reality is composed of light; more specifically, luminosity. Sound Mirror's Color Organ is a technological tool that allows the user to enhance their ability to see such luminosity. How? By synchronising the light with sound; where the user is able
+      to see that light is no different to other sensory information. All is a play of luminosity.
     </p>
 
     <div class="mandala">
@@ -75,9 +79,18 @@
     </div>
   </main>
 
-
-
   <footer>
     <p>Lovewave LTD Copyright 2018</p>
   </footer>
+
+  <script>
+    let header = document.querySelector('h1');
+
+    header.addEventListener('click', updateName);
+
+    function updateName() {
+      let newHeader = prompt('Enter a new header');
+      header.textContent = newHeader;
+    }
+  </script>
 </body>
